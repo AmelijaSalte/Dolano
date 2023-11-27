@@ -1,0 +1,498 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Imprima&family=Inder&family=Lily+Script+One&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    padding-top: 100px;
+}
+
+/*Header*/
+
+header{
+    width: calc(100%-200px);
+    height: 95px;
+    color: #000;
+    font-family: 'Imprima', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    padding: 0 100px 0 100px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: #FFF;
+    z-index: 3;
+    
+}
+
+header h1{
+    font-size: 32px;
+    margin: 25px 0 15px 0;
+}
+
+header a {
+    text-decoration: none;
+    color: #000;
+    font-size: 28px;
+  
+}
+
+
+
+header nav{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 200px 25px 200px;
+
+}
+
+a.login-button{
+    border-radius: 45px;
+    background: #32838C;
+    width: 140px;
+    height: 52px;
+    border: 1px solid #32838C;
+    text-align: center;
+    padding-top: 18px;
+    color: #fff;
+}
+
+a.login-button:hover{
+    color: #32838C;
+    background-color: #fff;
+    border: 1px solid #32838C;
+    
+}
+
+header a:hover{
+    color: #32838C;
+}
+
+/*main*/
+
+.banner p {
+    color: #464646;
+    font-family: Imprima;
+    font-size: 16px;
+    font-weight: 400;
+    width: 326px;
+    height: 74px;
+    margin-top: 25px;
+}
+
+.banner h4{
+    color: #000;
+    font-family: Imprima;
+    font-size: 70px;
+    font-weight: 400;
+}
+
+.banner .special-word{
+    color: #F4AE02;
+    font-family: Lily Script One;
+    font-size: 70px;
+    font-weight: 400;
+}
+
+.banner span {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.banner-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 100px 10px 60px;
+}
+
+.banner {
+    margin: 50px 50px 70px 50px;
+}
+
+img.palms-photo{
+    grid-area: p;
+}
+
+img.beach-photo{
+    grid-area: b;
+}
+img.flamingo-photo{
+    grid-area: f;
+} 
+
+.banner-photos {
+    display: grid;
+    grid-template-columns: 9fr 9fr;
+    grid-template-rows: 12fr 1fr 16fr;
+    grid-template-areas: "b  p"
+                        " b  f"
+                        " .  f";
+    width: 650px;
+    height: 700px;
+    margin-top: 50px;
+}
+
+div.search {
+    width: 795px;
+    height: 114px;
+    border-radius: 60px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.40);
+    position: absolute; 
+    top: 650px;
+    left: 110px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+   }
+
+div.search div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 30px 45px 30px 55px;
+}
+
+div.search label, option, select {
+    color: #464646;
+    font-family: Inder;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+div.search span {
+    width: 1px;
+    height: 109px;
+    background: rgba(0, 0, 0, 0.08);
+}
+
+div.search button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #32838C;
+    border: none;
+    margin: 15px 0px 0px 30px;
+}
+ /* Place section */
+
+ .places h4 {
+    color: #000;
+    font-family: Imprima;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+
+ }
+ .places span {
+    display: inline-block;
+    width: 490px;
+    height: 1px;
+    background: #9E9E9E;
+    
+ }
+
+ .places div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px 0 20px 0;
+ }
+
+ .places article div p{
+    color: #FFF;
+    font-family: Imprima;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+ }
+.places article div h5{
+    color: #FFF;
+    font-family: Imprima;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.places p.price {
+    color: #F4AE02;
+    font-family: Inder;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 150px;
+ }
+
+ .places article {
+    width: 353px;
+    height: 489px;
+ }
+
+ .places article div {
+    position: relative;
+    top: 295px;
+    width: 333px;
+    height: 175px;
+    border-radius: 0px 0px 25px 25px;
+    background: rgba(0, 0, 0, 0.50);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 20px;
+
+ }
+
+ .first-thailand{
+    background-image: url(Images/thailand1.jpg);
+ }
+ .second-thailand{
+    background-image: url(Images/thailand2.jpg);
+ }
+ .third-thailand{
+    background-image: url(Images/thailand3.jpg);
+ }
+
+ .first-cyprus{
+    background-image: url(Images/cyprus1.jpg);
+ }
+ .second-cyprus{
+    background-image: url(Images/cyprus2.jpg);
+ }
+ .third-cyprus{
+    background-image: url(Images/cyprus3.jpg);
+ }
+ .first-spain{
+    background-image: url(Images/spain1.jpg);
+ }
+ .second-spain{
+    background-image: url(Images/spain2.jpg);
+ }
+ .third-spain{
+    background-image: url(Images/spain3.png);
+ }
+ .first-bali{
+    background-image: url(Images/bali1.jpg);
+ }
+ .second-bali{
+    background-image: url(Images/bali2.jpg);
+ }
+ .third-bali{
+    background-image: url(Images/bali3.jpg);
+ }
+
+
+
+
+ /*News section */
+
+ .news article {
+    height: 440px;
+    width: 280px;
+ }
+ .news div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    
+ }
+ .news p {
+    color: #000;
+    font-family: Imprima;
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 15px;
+    width: 280px;
+    height: 151px;
+ }
+
+ .news a {
+    color: #32838C;
+    font-family: Imprima;
+    font-size: 28px;
+    font-weight: 400;
+    text-decoration: none;
+ }
+ /* Comments section*/
+.comments {
+    height: 600px;
+    width: 100%;
+    background: #FBF2E9;
+    margin-top: 90px;
+    padding-top: 25px;
+ }
+
+ .comments  h3,.comments h2 {
+    text-align: start;
+    margin-left: 100px;
+ }
+ .comments>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 50px;
+ }
+  
+ div.comment{  
+    width: 350px;
+    height: 350px;
+    border-radius: 25px;
+    background: #FFF;
+}
+.comment-text{
+    margin: 30px 30px 10px 30px;
+
+}
+.comment-text p{
+    color: #000;
+    font-family: Imprima;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 20px;
+}
+.commentor-acount{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 40px 30px 30px 30px;
+    align-items: center;
+}
+.commentor-acount h6{
+    color: #000;
+    font-family: Imprima;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.commentor-acount p{
+    color: #000;
+    font-family: Imprima;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+ 
+ /* video section */
+ .video iframe {
+    width: 1036px;
+    height: 598px;
+    margin: 20px 0px 20px 200px;
+ }
+ .video span{
+    color: #F4AE02;
+    font-family: Lily Script One;
+    font-size: 70px;
+    font-weight: 400;
+ }
+
+ .video div {
+    margin: 50px 0px 20px 300px;
+    width: 800px;
+    text-align: center;
+ }
+
+.video h4 {
+    display: inline;
+    color: #000;
+    font-family: Imprima;
+    font-size: 64px;
+    font-weight: 400;
+}
+
+/* footer */
+
+footer {
+    background-color: #0D1220;
+    height: 552px;
+}
+footer h2 {
+    color: #FFF;
+    font-family: Imprima;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.footer-links a{
+    color: rgba(255, 255, 255, 0.80);
+    font-family: Imprima;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+.footer-links div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+}
+.footer-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+
+footer span{
+    width: 500px;
+    height: 2px;
+    background: #1F2330;
+}
+.footer-logo h1 {
+    color: #FFF;
+    font-family: Imprima;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin: 50px 0 15px 0;
+}
+
+footer p{
+    color: rgba(255, 255, 255, 0.80);
+    font-family: Imprima;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+/* * */
+
+h2 {
+    color: #32838C;
+    font-family: Imprima;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+    margin: 15px 0px 15px 0px;
+}
+
+h3{
+    color: #000;
+    font-family: Imprima;
+    font-size: 64px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+}
